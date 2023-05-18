@@ -1,4 +1,4 @@
-.my-page {
+.slategrey-fill {
     background-color: slategrey;
     height: 100vh;
 }
@@ -8,16 +8,16 @@
     border: 5px solid green;
 }
 
-.my-nav-button {
+.lightgreen-fill {
     border: 2px solid lightgreen;
 }
 
-.my-folders {
+.lawngreen-border {
     border: 5px solid lawngreen;
 }
 
 
-.my-searchbar {
+.gold-fill {
     background-color: gold;
 }
 
@@ -25,28 +25,28 @@
     border: 5px solid blue;
 }
 
-my.messages {
-    border: 2px solid rgb(70, 160, 174);
+.hotpink-border {
+    border: 2px solid hotpink;
 }
 
-.my-avatar {
-    border: 2px solid rgb(0, 188, 250);
+.skyblue-border {
+    border: 2px solid skyblue;
     max-width: 50px;
 }
 
-.my-preview-filler {
-    border: 2px solid rgb(32, 88, 106);
+.teal-border {
+    border: 2px solid teal);
 }
 
 
-.my-active-message {
+.red-border {
     border: 5px solid red;
 }
 
-.type-stuff {
+.tan-fill {
     background-color: tan;
 }
 
-.visible-mess {
+.orange-border {
     border: 5px solid orange;
 }
