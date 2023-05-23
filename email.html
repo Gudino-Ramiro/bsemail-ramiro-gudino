@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
     <meta charset="UTF-8">
@@ -100,14 +100,13 @@
         </div>
     </div>
 
+    <!--container for the page-->
+    <div class="container-fluid vw-100 h-150% m-2" id="page-container">
 
-    <div class="container-fluid vw-100 h-100% slategrey-fill" id="page-container"><!--container for the page-->
+        <!-- top nav only on smaller than medium-->
+        <div class="row d-md-none my-2">
 
-        <div class="row d-md-none my-nav orange-border"><!-- top nav only on smaller than medium-->
-
-
-
-            <nav class="navbar navbar-expand bg-body-tertiary">
+            <nav class="navbar navbar-expand ">
                 <div class="container-fluid">
 
                     <a class="navbar-brand" href="#"><img src="Screen Shots.jpg" width="40px"></a>
@@ -166,33 +165,35 @@
 
         </div>
 
-        <div class="row" id="main-content"><!--main content-->
+        <!--main content-->
+        <div class="row" id="main-content">
 
-            <div class="col-2 d-none d-md-block  my-nav" id="side-nav"><!-- side nav only starts at medium-->
+            <!-- side-nav starts at medium-->
+            <div class="col-1 d-none d-md-block" id="side-nav-col">
 
-                <nav class="navbar bg-body-tertiary ">
+                <nav class="navbar" id="sidenavbar">
 
                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 
                         <!--side logo button-->
                         <li class="nav-item">
-                            <a class="navbar-brand" href="#"><img src="Screen Shots.jpg" width="100px"></a>
+                            <a class="navbar-brand" href="#"><img src="Screen Shots.jpg" class="side-icon""></a>
                         </li>
 
-                        <!--side folder button-->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="80" height="80"
-                                    fill="currentColor" class="bi bi-folder-fill" viewBox="0 0 16 16">
-                                    <path
-                                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
-                                </svg></a>
+                        <!--side folders button-->
+                        <li class=" nav-item">
+                                <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                        class="bi bi-folder-fill side-icon" viewBox="0 0 16 16">
+                                        <path
+                                            d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
+                                    </svg></a>
                         </li>
 
+                        <!--side compose button-->
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <!--side compose button-->
-                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
-                                    class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-pencil-square side-icon" viewBox="0 0 16 16">
                                     <path
                                         d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
                                     <path fill-rule="evenodd"
@@ -201,114 +202,219 @@
                             </a>
                         </li>
 
+                        <!--side search button-->
                         <li class="nav-item">
                             <a class="nav-link" href="#">
-                                <!--side search button-->
-                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
-                                    class="bi bi-search" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-search side-icon" viewBox="0 0 16 16">
                                     <path
                                         d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                                 </svg>
                             </a>
                         </li>
 
+                        <!--side settings button-->
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><!--side settings button-->
-                                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor"
-                                    class="bi bi-gear-fill" viewBox="0 0 16 16">
+                            <a class="nav-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                                    class="bi bi-gear-fill side-icon" viewBox="0 0 16 16">
                                     <path
                                         d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
                                 </svg></a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-
-
                     </ul>
 
                 </nav>
 
-
             </div>
 
-            <div class="col col-md-5 my-inbox "><!--Searchbar and Inboxmessages-->
 
-                <div class="mb-3 d-none d-md-block gold-fill"><!--Search bar only show on medium or larger-->
+            <!--Search/Folders/Messages box-->
+            <div class="col col-md-5 m-2 ">
+
+                <!--Search bar only show on medium or larger-->
+                <div class="row mb-3 d-none d-md-block">
                     <label for="search-bar" class="form-label"></label>
                     <textarea class="form-control" id="searchbar" rows="1" placeholder="Search"></textarea><button
                         class="btn btn-secondary">find it</button>
                 </div>
 
+                <!--Folders/Messages-->
+                <div class="row">
 
-                <div class="container-sm red-border"><!--inbox list-->
+                    <!--Folder list-->
+                    <div class="col-lg-3 d-none d-lg-block mx-auto"><!--folder list-->
 
-                    <button type="button" class="btn btn-success openBtn m-2 mess1">
-                        <div class="row hotpink-border">
-                            <div class="col-3 skyblue-border">
-                                <img src="veggieadventurer2.jpg" class="img-fluid rounded-circle profile"
-                                    alt="veggieadventurer pic" width="200px">
+                        <button type="button" class="btn openBtn m-2 "><!--inbox button-->
+                            <div class="row">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-folder-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
+                                </svg>
+                                <div class="col teal-border">
+                                    Inbox
+                                </div>
                             </div>
-                            <div class="col teal-border">
-                                Message1
-                            </div>
-                        </div>
-                    </button>
+                        </button>
 
-                    <button type="button" class="btn m-2 btn-success openBtn  mess2">
-                        <div class="row hotpink-border">
-                            <div class="col-3 skyblue-border">
-                                <img src="mathwizard.jpg" class="img-fluid rounded-circle profile" alt="mathwizard pic" width="400px">
+                        <button type="button" class="btn openBtn m-2"><!--drafts button-->
+                            <div class="row">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-folder-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
+                                </svg>
+                                <div class="col teal-border">
+                                    Drafts
+                                </div>
                             </div>
-                            <div class="col teal-border">
-                                Message2
-                            </div>
-                        </div>
-                    </button>
+                        </button>
 
-                    <button type="button" class="btn  m-2 btn-success openBtn mess3">
-                        <div class="row hotpink-border">
-                            <div class="col-3 skyblue-border">
-                                <img src="veggieadventurer2.jpg" class="img-fluid rounded-circle profile"
-                                    alt="veggieadventurer pic" width="200px">
+                        <button type="button" class="btn openBtn m-2"><!--sent button-->
+                            <div class="row">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-folder-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
+                                </svg>
+                                <div class="col teal-border">
+                                    Sent
+                                </div>
                             </div>
-                            <div class="col teal-border">
-                                Message3
-                            </div>
-                        </div>
-                    </button>
+                        </button>
 
-                    <button type="button" class="btn  m-2 btn-success openBtn mess4">
-                        <div class="row hotpink-border">
-                            <div class="col-3 skyblue-border">
-                                <img src="mathwizard.jpg" class="img-fluid rounded-circle profile" alt="mathwizard pic" width="400px">
+                        <button type="button" class="btn openBtn m-2"><!--spam button-->
+                            <div class="row">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-folder-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
+                                </svg>
+                                <div class="col teal-border">
+                                    Spam
+                                </div>
                             </div>
-                            <div class="col teal-border">
-                                Message4
-                            </div>
-                        </div>
-                    </button>
+                        </button>
 
-                    <button type="button" class="btn  m-2 btn-success openBtn mess5">
-                        <div class="row hotpink-border">
-                            <div class="col-3 skyblue-border">
-                                <img src="veggieadventurer2.jpg" class="img-fluid rounded-circle profile"
-                                    alt="veggieadventurer pic" width="200px">
+                        <button type="button" class="btn openBtn m-2"><!--Work button-->
+                            <div class="row">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                                    class="bi bi-folder-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.825a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31L.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3zm-8.322.12C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139z" />
+                                </svg>
+                                <div class="col teal-border">
+                                    Work
+                                </div>
                             </div>
-                            <div class="col teal-border">
-                                Message5
-                            </div>
-                        </div>
-                    </button>
+                        </button>
+
+                    </div>
+
+                    <!--Inbox Messages-->
+                    <div class="col">
+
+                        <!--mess1 button-->
+                        <button type="button" class="btn openBtn m-2 bg-light-subtle mess1">
+                            <div class="row">
+                                <div class="col-3 ">
+                                    <img src="veggieadventurer2.jpg" class="img-fluid rounded-circle profile"
+                                        alt="veggieadventurer pic" width="200px">
+                                </div>
+
+                                <div class="col">
+                                    <div class="row">
+                                        <label for="exampleFormControlInput1" class="form-label">Email:
+                                            veganadventurer</label>
+                                        <label for="exampleFormControlInput1" class="form-label">Subject: Urgent:
+                                            Summoned Animal Assistance Needed</label><br>
+                                    </div>
+                                </div>
+                        </button>
+
+                        <!--mess2 button-->
+                        <button type="button" class="btn m-2 openBtn bg-light-subtle mess2">
+                            <div class="row">
+                                <div class="col-3 ">
+                                    <img src="mathwizard.jpg" class="img-fluid rounded-circle profile"
+                                        alt="mathwizard pic" width="400px">
+                                </div>
+
+                                <div class="col">
+                                    <div class="row">
+                                        <label for="exampleFormControlInput1" class="form-label">Email:
+                                            mathwizard@aol.com</label>
+                                        <label for="exampleFormControlInput1" class="form-label">Subject: Urgent:
+                                            Unbelievable Hypocrisy: Vegan Adventurer's Actions</label><br>
+                                    </div>
+                                </div>
+                        </button>
+
+                        <!--mess3 button-->
+                        <button type="button" class="btn  m-2 openBtn bg-light-subtle mess3">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="veggieadventurer2.jpg" class="img-fluid rounded-circle profile"
+                                        alt="veggieadventurer pic" width="200px">
+                                </div>
+
+                                <div class="col">
+                                    <div class="row">
+                                        <label for="exampleFormControlInput1" class="form-label">Email:
+                                            veganadventurer</label>
+                                        <label for="exampleFormControlInput1" class="form-label">
+                                            Complaint: Math Wizard's Carnivorous Hypocrisy</label><br>
+                                    </div>
+                                </div>
+                        </button>
+
+                        <!--mess4 button-->
+                        <button type="button" class="btn  m-2 openBtn bg-light-subtle mess4">
+                            <div class="row">
+                                <div class="col-3">
+                                    <img src="mathwizard.jpg" class="img-fluid rounded-circle profile"
+                                        alt="mathwizard pic" width="400px">
+                                </div>
+
+                                <div class="col">
+                                    <div class="row">
+                                        <label for="exampleFormControlInput1" class="form-label">Email:
+                                            mathwizard@aol.com</label>
+                                        <label for="exampleFormControlInput1" class="form-label">
+                                            Excessive Vegan Extremism: GM's Attention Needed</label><br>
+                                    </div>
+                                </div>
+                        </button>
+
+                        <!--mess5 button-->
+                        <button type="button" class="btn  m-2 openBtn bg-light-subtle mess5">
+                            <div class="row ">
+                                <div class="col-3 ">
+                                    <img src="veggieadventurer2.jpg" class="img-fluid rounded-circle profile"
+                                        alt="veggieadventurer pic" width="200px">
+                                </div>
+
+                                <div class="col">
+                                    <div class="row">
+                                        <label for="exampleFormControlInput1" class="form-label">Email:
+                                            veganadventurer</label>
+                                        <label for="exampleFormControlInput1" class="form-label">
+                                            Lack of Compassion: Non-Vegan Player's Complaints</label><br>
+                                    </div>
+                                </div>
+                        </button>
+
+                    </div>
 
                 </div>
-
             </div>
 
-            <div class="col d-none d-md-block red-border" id="activeMessage"><!--Message column starts on md-->
+            <!--active messages-->
+            <div class="col d-none d-md-block m-3 p-3" id="activeMessage"><!--Message column starts on md-->
 
-                <div class="row" id="removal"><!-- trash and spam buttons-->
+                <div class="row m-3" id="removal"><!-- trash and spam buttons-->
                     <div class="col">
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trashed"
                             id="trash">Trash</button>
@@ -319,8 +425,8 @@
                     </div>
                 </div>
 
-                <div class="container red-border" id="your-mess-here"><!--Load the message here-->
-                    <div class="row messmess orange-border" id="messy">
+                <div class="container bg-light-subtle p-4" id="your-mess-here"><!--Load the message here-->
+                    <div class="row messmess" id="messy">
                         <p class="card-text placeholder-glow">
                             <span class="placeholder col-7"></span>
                             <span class="placeholder col-4"></span>
@@ -341,7 +447,7 @@
                     </div>
                 </div>
 
-                <div class="row"><!--reply/forward buttons-->
+                <div class="row m-3"><!--reply/forward buttons-->
                     <div class="col">
                         <button type="button" class="btn btn-primary" data-bs-toggle="modal"
                             data-bs-target="#reply">Reply</button>

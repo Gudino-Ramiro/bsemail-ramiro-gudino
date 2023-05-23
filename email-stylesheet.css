@@ -1,5 +1,5 @@
 .slategrey-fill {
-    background-color: slategrey;
+    <!--background-color: slategrey;-->
     height: 100vh;
 }
 
@@ -21,7 +21,7 @@
     background-color: gold;
 }
 
-.my-inbox {
+.blue-border {
     border: 5px solid blue;
 }
 
@@ -31,7 +31,6 @@
 
 .skyblue-border {
     border: 2px solid skyblue;
-    max-width: 50px;
 }
 
 .teal-border {
@@ -49,4 +48,15 @@
 
 .orange-border {
     border: 5px solid orange;
+}
+
+.side-icon{
+    width: 45px;
+    height: 45px;
+}
+
+.mess-btn {
+    border: 20px solid purple;
+    background-color: blanchedalmond;
+    bg-light-subtle
 }
