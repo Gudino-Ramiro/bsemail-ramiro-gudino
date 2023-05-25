@@ -1,53 +1,7 @@
-.slategrey-fill {
-    <!--background-color: slategrey;-->
-    height: 100vh;
-}
 
-
-.my-nav {
-    border: 5px solid green;
-}
-
-.lightgreen-fill {
-    border: 2px solid lightgreen;
-}
-
-.lawngreen-border {
-    border: 5px solid lawngreen;
-}
-
-
-.gold-fill {
-    background-color: gold;
-}
-
-.blue-border {
-    border: 5px solid blue;
-}
-
-.hotpink-border {
-    border: 2px solid hotpink;
-}
-
-.skyblue-border {
-    border: 2px solid skyblue;
-}
-
-.teal-border {
-    border: 2px solid teal);
-}
-
-
-.red-border {
-    border: 5px solid red;
-}
-
-.tan-fill {
-    background-color: tan;
-}
-
-.orange-border {
-    border: 5px solid orange;
+.top-icon{
+    width: 45px;
+    height: 45px;
 }
 
 .side-icon{
@@ -55,8 +9,12 @@
     height: 45px;
 }
 
-.mess-btn {
-    border: 20px solid purple;
-    background-color: blanchedalmond;
-    bg-light-subtle
+.folders-icons{
+    width: 40px;
+    height: 40px;
+}
+
+.profile-pic{
+    width: 75px;
+    radius: "rounded-circle";
 }
